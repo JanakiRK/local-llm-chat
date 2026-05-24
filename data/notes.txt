@@ -1,0 +1,8 @@
+This is a sample notes file for my RAG project.
+
+RAG stands for Retrieval-Augmented Generation.
+In RAG, the AI first looks up relevant information from documents,
+then uses that information to generate an answer.
+
+This file is just a test. Later, I will add real documents
+from my Capstone project or research notes.

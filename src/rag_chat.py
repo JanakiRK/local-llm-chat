@@ -6,7 +6,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 
 
 # 1. Read and chunk the document (same as before)
-with open("data/notes.txt", "r", encoding="utf-8") as f:
+with open("../data/notes.txt", "r", encoding="utf-8") as f:
     text = f.read()
 
 text_splitter = CharacterTextSplitter(
@@ -75,6 +75,12 @@ while True:
     ai_reply = response.content
 
     print(f"\nAI:\n{ai_reply}")
+
+    print("\n[Context used:]")
+    for i, doc in enumerate(docs, start=1):
+        print(f"Source {i}:")
+        print(doc.page_content)
+        print("-" * 40)
 
     # 6d. (Optional) store history if you want to extend later
     history.append(HumanMessage(content=user_input))

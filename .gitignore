@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local Chroma DB directories
+chroma_db/
+chroma_db_eval/
+
+# OS files
+.DS_Store
+
+# PyCharm (optional, but usually not needed on GitHub)
+.idea/

@@ -4,8 +4,8 @@ from langchain_ollama import OllamaEmbeddings, ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 
 
-# 1. Prepare RAG components (similar to rag_chat.py, but no loop)
-with open("../data/notes.txt", "r", encoding="utf-8") as f:
+# 1. Prepare RAG components (similar to rag.py, but no loop)
+with open("../data/notes_rag.txt", "r", encoding="utf-8") as f:
     text = f.read()
 
 text_splitter = CharacterTextSplitter(

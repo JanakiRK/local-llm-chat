@@ -1,0 +1,13 @@
+Retrieval-Augmented Generation (RAG) is a technique that combines information retrieval with text generation. Instead of letting a language model answer only from its internal training data, RAG first retrieves relevant documents from an external knowledge base and then passes those documents, along with the user’s question, to the model.
+
+The main idea is to reduce hallucinations and keep answers grounded in a specific set of sources. In a RAG system, the model is encouraged to base its response on the retrieved context rather than inventing information.
+
+A typical RAG pipeline has several steps:
+1. Ingestion: read raw documents from files, such as notes, PDFs, or markdown files.
+2. Chunking: split long documents into smaller chunks so they fit into the model’s context window.
+3. Embedding: convert each chunk into a numeric vector using an embedding model.
+4. Indexing: store vectors in a vector database, such as Chroma, for efficient similarity search.
+5. Retrieval: for each user query, find the most similar chunks using vector similarity.
+6. Generation: build a prompt that includes the retrieved chunks as context plus the user’s question, and send it to the language model.
+
+In this project, the vector database is Chroma and the embedding model is nomic-embed-text from Ollama. The chat model is Llama 3.2 accessed through Ollama. All components run locally, which avoids sending data to external cloud APIs.

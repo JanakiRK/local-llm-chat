@@ -1,0 +1,17 @@
+Python is a general-purpose programming language that emphasizes readability and rapid development. It is widely used for web development, data analysis, scripting, automation, machine learning, and more.
+
+A Python list is an ordered, mutable collection of items. Lists are defined using square brackets and can contain elements of different types. For example:
+numbers = [1, 2, 3, 4]
+
+A list comprehension is a concise way to create lists. It combines a for-loop and optional conditions into a single expression. For example:
+squares = [x * x for x in range(5)]
+This creates the list [0, 1, 4, 9, 16].
+
+A dictionary in Python is an unordered collection of key-value pairs. Dictionaries are defined using curly braces with key: value syntax. For example:
+user = {"name": "Alice", "age": 30}
+
+Functions in Python are defined with the def keyword. They take parameters, contain a block of code, and can return a value. For example:
+def add(a, b):
+    return a + b
+
+Python is a good language for building small prototypes quickly, such as local LLM and RAG experiments, because it has rich libraries and simple syntax.

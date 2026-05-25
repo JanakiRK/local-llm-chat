@@ -4,7 +4,7 @@ from langchain_ollama import OllamaEmbeddings
 
 
 # 1. Read the text file
-with open("data/notes.txt", "r", encoding="utf-8") as f:
+with open("../data/notes.txt", "r", encoding="utf-8") as f:
     text = f.read()
 
 # 2. Split into chunks (same as before)

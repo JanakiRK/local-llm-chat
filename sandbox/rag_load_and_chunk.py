@@ -1,7 +1,7 @@
 from langchain_text_splitters import CharacterTextSplitter
 
 # 1. Read the text file
-with open("data/notes.txt", "r", encoding="utf-8") as f:
+with open("../data/notes.txt", "r", encoding="utf-8") as f:
     text = f.read()
 
 print("Original text:")
